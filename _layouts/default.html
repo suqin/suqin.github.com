@@ -71,7 +71,7 @@
             <span class="icon-bar"></span>
           </a>
 
-          <a class="brand" href="suqin.github.com">Home</a>
+          <a class="brand" href="/">Home</a>
           <div class="nav-collapse">
             <ul class="nav pull-right">
               <li><a href="/">Home</a></li>
@@ -114,7 +114,7 @@
             <hr />
             <div id="posts">
               {% for post in site.posts limit:10%}
-                <p><a href="/blog{{ post.url }}">{{ post.title }}</a></p>
+                <p><a href="{{ post.url }}">{{ post.title }}</a></p>
               {% endfor %}
               <hr>
               <p>powered by <a href="https://github.com/mojombo/jekyll">jekyll</a></p>
